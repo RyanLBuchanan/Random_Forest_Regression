@@ -15,7 +15,9 @@ print(X)
 
 print(y)
 # Train the Random Forest Regression model on the whole dataset
-
+from sklearn.ensemble import RandomForestRegressor
+regressor = RandomForestRegressor(n_estimators = 10, random_state = 0)
+regressor.fit(X, y)
 
 # Predict a new result using specific instance of Years of Experience
 
