@@ -20,6 +20,6 @@ regressor = RandomForestRegressor(n_estimators = 10, random_state = 0)
 regressor.fit(X, y)
 
 # Predict a new result using specific instance of Years of Experience
-
+regressor.predict([[6.5]])
 
 # Visualize the Random Forest Regression results (higher resolution)
